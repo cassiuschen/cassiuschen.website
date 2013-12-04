@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh_CN" class="csstransforms csstransforms3d csstransitions js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Cassius Chen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Cassius Chen, 1995. From Beijing, China.">
+	<meta name="keywords" content="design, persona, cassius, cassiuschen, ">
+	<meta name="author" content="Cassius Chen">
+	<meta name="designer" content="Cassius Chen">
+  
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <%= csrf_meta_tags %>
+<style>
+	 #ticker ul.tweet_list {
+		  height:85px;
+		  overflow-y:hidden;
+		}
+		#ticker .tweet_list li {
+		  height:85px;
+		}
+</style>
+</head>
+<body>
+	<%= yield %>
+
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+
+	<div id="cboxOverlay" style="opacity: 1; cursor: auto; visibility: visible; height: 100%; display: none;"></div><div id="colorbox" class="" style="display: none; visibility: visible; top: 4694px; left: 478px; position: absolute; width: 864px; height: 879px; opacity: 1; cursor: auto;"><div id="cboxWrapper" style="height: 879px; width: 864px;"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left; width: 864px;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left; height: 729px;"></div><div id="cboxContent" style="float: left; width: 864px; height: 729px;"><div id="cboxTitle" style="float: left; display: block; top: 0px;">Title Here</div><div id="cboxCurrent" style="float: left; display: block; top: 0px;">image 2 of 20</div><div id="cboxNext" style="float: left; top: 0px; display: block;">next</div><div id="cboxPrevious" style="float: left; top: 0px; display: block;">previous</div><div id="cboxSlideshow" style="float: left; display: none; top: 0px;"></div><div id="cboxClose" style="float: left; top: 0px;">close</div></div><div id="cboxMiddleRight" style="float: left; height: 729px;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left; width: 864px;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div>
+</body>
+<style type="text/css">embed[type*="application/x-shockwave-flash"],embed[src*=".swf"],object[type*="application/x-shockwave-flash"],object[codetype*="application/x-shockwave-flash"],object[src*=".swf"],object[codebase*="swflash.cab"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"],object[classid*="d27cdb6e-ae6d-11cf-96b8-444553540000"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"]{	display: none !important;}</style>
+</html>
