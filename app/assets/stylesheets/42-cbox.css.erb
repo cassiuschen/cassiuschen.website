@@ -25,17 +25,17 @@
         .cboxIframe{}
         #cboxError{padding:50px; }
         #cboxLoadedContent{background:none; padding:0px; height:auto!important; z-index: 1000}
-        #cboxLoadingGraphic{width:100px; height:100px; background: #000 url(../images/close_hover.png) no-repeat center center; left:50%; margin-left:-50px; top:50%; margin-top:-50px; border-radius:50px;box-shadow: none !important;}
+        #cboxLoadingGraphic{width:100px; height:100px; background: #000 url(<%= asset_path 'close_hover.png' %>) no-repeat center center; left:50%; margin-left:-50px; top:50%; margin-top:-50px; border-radius:50px;box-shadow: none !important;}
         #cboxLoadingOverlay{ background:none; box-shadow: none !important;}
         #cboxTitle{font-family:"Open_Sans_B";color:#fff; height:60px; left: 0; padding: 20px; position: fixed; top: 0; width: 100%; font-size: 24px; font-weight:bold; line-height:20px;/*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); */}
         #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
-        #cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:40px; height:40px; position:absolute; top:-20px; background:url(../images/controls.png) no-repeat 0 0;}
-        #cboxPrevious{display:none !important;background:url(../images/left_hover.png) 12px 10px no-repeat #29ABC1; right:120px; position:fixed; margin-top:20px; border-radius: 50%;}
-        #cboxPrevious:hover{background:url(../images/left_hover.png) 12px 10px no-repeat #000; }
-        #cboxNext{display:none !important;background:url(../images/right_hover.png) 14px 10px no-repeat #29ABC1; right:70px; position:fixed; margin-top:20px; border-radius: 50%;}
-        #cboxNext:hover{background:url(../images/right_hover.png) 14px 10px no-repeat #fff;}
-        #cboxClose{background:#000 url(../images/close.png) no-repeat center center; right:10px; margin-top:10px; position:fixed; border-radius: 50%;}
-        #cboxClose:hover{background:#fff url(../images/close_hover.png) no-repeat center center; right:10px; margin-top:10px; position:fixed; border-radius: 50%;}
+        #cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:40px; height:40px; position:absolute; top:-20px; background:url(<%= asset_path 'controls.png' %>) no-repeat 0 0;}
+        #cboxPrevious{display:none !important;background:url(<%= asset_path 'left_hover.png' %>) 12px 10px no-repeat #29ABC1; right:120px; position:fixed; margin-top:20px; border-radius: 50%;}
+        #cboxPrevious:hover{background:url(<%= asset_path 'left_hover.png' %>) 12px 10px no-repeat #000; }
+        #cboxNext{display:none !important;background:url(<%= asset_path 'right_hover.png' %>) 14px 10px no-repeat #29ABC1; right:70px; position:fixed; margin-top:20px; border-radius: 50%;}
+        #cboxNext:hover{background:url(<%= asset_path 'right_hover.png' %>) 14px 10px no-repeat #fff;}
+        #cboxClose{background:#000 url(<%= asset_path 'close.png' %>) no-repeat center center; right:10px; margin-top:10px; position:fixed; border-radius: 50%;}
+        #cboxClose:hover{background:#fff url(<%= asset_path 'close_hover.png' %>) no-repeat center center; right:10px; margin-top:10px; position:fixed; border-radius: 50%;}
         .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
         .cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
         .cboxSlideshow_on #cboxSlideshow:hover{background-position:-100px -25px;}

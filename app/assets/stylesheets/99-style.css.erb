@@ -155,7 +155,7 @@ font-size:18px;
 }
 
 #intro{
-	background:url(../images/bg/01.jpg) 50% -75px no-repeat fixed;
+	background:url(<%= asset_path '01.jpg' %>) 50% -75px no-repeat fixed;
 	color: white;
 	min-height: 860px;
 	margin: 0 auto;
@@ -163,7 +163,7 @@ font-size:18px;
 }
 
 #second{
-	background: url(../images/bg/02.jpg) 50% 0 no-repeat fixed;
+	background: url(<%= asset_path '02.jpg' %>) 50% 0 no-repeat fixed;
 	color: white;
 	min-height: 936px;
 	margin: 0 auto;
@@ -172,7 +172,7 @@ font-size:18px;
 }
 
 #second .bg{
-	background: url(../images/bg/02a.png) 50% 0 no-repeat fixed;
+	background: url(<%= asset_path '02a.png' %>) 50% 0 no-repeat fixed;
 	min-height: 1300px;
 	margin: 0 auto;
 	position: absolute;
@@ -180,7 +180,7 @@ font-size:18px;
 	z-index: 200;
 }
 #third{
-	background: url(../images/bg/03.jpg) 50% 0 no-repeat fixed;
+	background: url(<%= asset_path '03.jpg' %>) 50% 0 no-repeat fixed;
 	color: white;
 	min-height: 1300px;
 	margin: 0 auto;
@@ -188,7 +188,7 @@ font-size:18px;
 	/*box-shadow:0 0 16px 0 rgba(0, 0, 0, 0.9);*/}
 	
 #fourth{
-	background: url(../images/bg/07.jpg) 50% 0 no-repeat fixed;
+	background: url(<%= asset_path '07.jpg' %>) 50% 0 no-repeat fixed;
 	color: white;
 	min-height: 1400px;
 	margin: 0 auto;
@@ -202,14 +202,14 @@ font-size:18px;
 	z-index: 200;
 }
 #fifth{
-	background: url(../images/bg/05.jpg) 50% 0 no-repeat fixed;
+	background: url(<%= asset_path '05.jpg' %>) 50% 0 no-repeat fixed;
 	color: white;
 	min-height: 900px;
 	padding-bottom: 60px !important;
 }
 
 #sixth{
-	background: url(../images/bg/04.jpg) 50% 0 no-repeat fixed;
+	background: url(<%= asset_path '04.jpg' %>) 50% 0 no-repeat fixed;
 	color: white;
 	min-height: 936px;
 	margin: 0 auto;
@@ -218,7 +218,7 @@ font-size:18px;
 }
 
 #seventh{
-	background: url(../images/bg/06.jpg) 50% 0 no-repeat fixed;
+	background: url(<%= asset_path '06.jpg' %>) 50% 0 no-repeat fixed;
 	color: white;
 	min-height: 950px;
 	/*box-shadow:0 0 16px 0 rgba(0, 0, 0, 0.9);*/
@@ -464,17 +464,17 @@ font-family:"Open_Sans_L";
 #services-graph li p{color:#fff;font-size:16px;font-weight:700;left:10px;position:absolute;top:10px; text-transform:uppercase;
 font-family:"Nexa_Light";}
 .percentage{color:#000;font-family:'PT Sans', tahoma, sans serif;font-size:1.4em;font-weight:700;margin-left:4px; letter-spacing:0; font-style:normal; margin-left:15px;}
-.bar-container{background:url('../images/overlay_solid_dark.png') repeat;height:47px;width:100%;}
-.bar-10{background:url('../images/overlay_solid_darkest.png') repeat; height:47px;width:10%;}
-.bar-20{background:url('../images/overlay_solid_darkest.png') repeat; height:47px;width:20%;}
-.bar-30{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:30%;}
-.bar-40{background:url('../images/overlay_solid_darkest.png') repeat; height:47px;width:40%;}
-.bar-50{background:url('../images/overlay_solid_darkest.png') repeat; height:47px;width:50%;}
-.bar-60{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:60%;}
-.bar-70{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:70%;}
-.bar-80{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:80%;}
-.bar-90{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:90%;}
-.bar-100{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:100%;}
+.bar-container{background:url(<%= asset_path 'overlay_solid_dark.png' %>) repeat;height:47px;width:100%;}
+.bar-10{background:url(<%= asset_path 'overlay_solid_darkest.png' %>) repeat; height:47px;width:10%;}
+.bar-20{background:url(<%= asset_path 'overlay_solid_darkest.png' %>) repeat; height:47px;width:20%;}
+.bar-30{background:url(<%= asset_path 'overlay_solid_darkest.png' %>) repeat;height:47px;width:30%;}
+.bar-40{background:url(<%= asset_path 'overlay_solid_darkest.png' %>) repeat; height:47px;width:40%;}
+.bar-50{background:url(<%= asset_path 'overlay_solid_darkest.png' %>) repeat; height:47px;width:50%;}
+.bar-60{background:url(<%= asset_path 'overlay_solid_darkest.png' %>) repeat;height:47px;width:60%;}
+.bar-70{background:url(<%= asset_path 'overlay_solid_darkest.png' %>) repeat;height:47px;width:70%;}
+.bar-80{background:url(<%= asset_path 'overlay_solid_darkest.png' %>) repeat;height:47px;width:80%;}
+.bar-90{background:url(<%= asset_path 'overlay_solid_darkest.png' %>) repeat;height:47px;width:90%;}
+.bar-100{background:url(<%= asset_path 'overlay_solid_darkest.png' %>) repeat;height:47px;width:100%;}
 
 
 /* -----------------------------------------
@@ -803,7 +803,7 @@ color: #fff !important;
 	/*Parallax layers deactivated on Mobiles*/
 	#intro{
 		min-height: 760px !important;
-	background:url(../images/bg/01.jpg) center center no-repeat fixed;
+	background:url(<%= asset_path '01.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
@@ -819,18 +819,18 @@ color: #fff !important;
 	}
 		
 	#fourth{
-		background: url(../images/bg/07.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '07.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 	#fourth .bg{
 	}
 	#fifth{
-		background: url(../images/bg/05.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '05.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
 	#sixth{
-		background: url(../images/bg/04.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '04.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
@@ -904,7 +904,7 @@ color: #fff !important;
 	/*Parallax layers deactivated on Mobiles*/
 	#intro{
 		min-height: 760px !important;
-	background:url(../images/bg/01.jpg) center center no-repeat fixed;
+	background:url(<%= asset_path '01.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
@@ -920,18 +920,18 @@ color: #fff !important;
 	}
 		
 	#fourth{
-		background: url(../images/bg/07.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '07.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 	#fourth .bg{
 	}
 	#fifth{
-		background: url(../images/bg/05.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '05.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
 	#sixth{
-		background: url(../images/bg/04.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '04.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
@@ -1003,7 +1003,7 @@ color: #fff !important;
 	/*Parallax layers deactivated on Mobiles*/
 	#intro{
 		min-height: 760px !important;
-	background:url(../images/bg/01.jpg) center center no-repeat fixed;
+	background:url(<%= asset_path '01.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
@@ -1019,18 +1019,18 @@ color: #fff !important;
 	}
 		
 	#fourth{
-		background: url(../images/bg/07.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '07.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 	#fourth .bg{
 	}
 	#fifth{
-		background: url(../images/bg/05.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '05.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
 	#sixth{
-		background: url(../images/bg/04.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '04.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
@@ -1105,7 +1105,7 @@ color: #fff !important;
 	/*Parallax layers deactivated on Mobiles*/
 	#intro{
 		min-height: 600px !important;
-	background:url(../images/bg/01.jpg) center center no-repeat fixed;
+	background:url(<%= asset_path '01.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
@@ -1121,18 +1121,18 @@ color: #fff !important;
 	}
 		
 	#fourth{
-		background: url(../images/bg/07.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '07.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 	#fourth .bg{
 	}
 	#fifth{
-		background: url(../images/bg/05.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '05.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
 	#sixth{
-		background: url(../images/bg/04.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '04.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
@@ -1208,7 +1208,7 @@ color: #fff !important;
 	/*Parallax layers deactivated on Mobiles*/
 	#intro{
 		min-height: 600px !important;
-	background:url(../images/bg/01.jpg) center center no-repeat fixed;
+	background:url(<%= asset_path '01.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
@@ -1224,18 +1224,18 @@ color: #fff !important;
 	}
 		
 	#fourth{
-		background: url(../images/bg/07.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '07.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 	#fourth .bg{
 	}
 	#fifth{
-		background: url(../images/bg/05.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '05.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 
 	#sixth{
-		background: url(../images/bg/04.jpg) center center no-repeat fixed;
+		background: url(<%= asset_path '04.jpg' %>) center center no-repeat fixed;
 	background-size: cover;
 	}
 

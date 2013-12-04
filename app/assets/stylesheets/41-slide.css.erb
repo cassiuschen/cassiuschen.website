@@ -50,10 +50,10 @@ html[xmlns] .slides {display: block;}
 /* Direction Nav */
 .flex-direction-nav {height: 0;}
 .flex-direction-nav a {width: 40px; height: 40px; display: block;  position: absolute;  z-index: 10; cursor: pointer; text-indent: -9999px;  -webkit-transition: all .3s ease; margin-top:-80px; opacity:0}
-.flex-direction-nav .flex-next {background: url("../images/right.png") 14px 9px rgba(255, 255, 255, 0.5) no-repeat; left:81px;  }
-.flex-direction-nav .flex-prev {background: url("../images/left.png")  12px 9px rgba(255, 255, 255, 0.5) no-repeat; left:40px; }
-.flexslider:hover .flex-next {background: url("../images/right.png") 14px 9px rgba(255, 255, 255, 1) no-repeat; opacity:0.5; }
-.flexslider:hover .flex-prev {background: url("../images/left.png")  12px 9px rgba(255, 255, 255, 1) no-repeat; opacity:0.5; }
+.flex-direction-nav .flex-next {background: url("<%= asset_path 'right.png' %>") 14px 9px rgba(255, 255, 255, 0.5) no-repeat; left:81px;  }
+.flex-direction-nav .flex-prev {background: url("<%= asset_path 'left.png' %>")  12px 9px rgba(255, 255, 255, 0.5) no-repeat; left:40px; }
+.flexslider:hover .flex-next {background: url("<%= asset_path 'right.png' %>") 14px 9px rgba(255, 255, 255, 1) no-repeat; opacity:0.5; }
+.flexslider:hover .flex-prev {background: url("<%= asset_path 'left.png' %>")  12px 9px rgba(255, 255, 255, 1) no-repeat; opacity:0.5; }
 
 .flexslider .flex-prev:hover, .flexslider .flex-next:hover { opacity:0.7}
 .flex-direction-nav .flex-disabled {opacity: 0.3!important; cursor: default;}
