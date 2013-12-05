@@ -2,14 +2,14 @@
 <header id="mobile-header" class="clearfix hidden-desktop">
     <div id="nav" class="closed" aria-hidden="false" style="-webkit-transition: max-height 400ms; transition: max-height 400ms; position: relative;">
       <ul>
-        <li><a class="scroll-link" href="#intro" data-soffset="0">Home</a></li>
-        <li><a class="scroll-link" href="#second" data-soffset="0">About</a></li>
-        <li><a class="scroll-link" href="#third" data-soffset="0">Features</a></li>
-        <li><a class="scroll-link" href="#fourth" data-soffset="0">Services</a></li>
-        <li><a class="scroll-link" href="#fifth" data-soffset="0">Portfolio</a></li>
-        <li><a class="scroll-link" href="#seventh" data-soffset="0">Contact</a></li>
+        <li><a class="scroll-link" href="#intro" data-soffset="0"><%= t('nav.home') %></a></li>
+        <li><a class="scroll-link" href="#second" data-soffset="0"><%= t('nav.about') %></a></li>
+        <li><a class="scroll-link" href="#third" data-soffset="0"><%= t('nav.features') %></a></li>
+        <li><a class="scroll-link" href="#fourth" data-soffset="0"><%= t('nav.services') %></a></li>
+        <li><a class="scroll-link" href="#fifth" data-soffset="0"><%= t('nav.portfolio') %></a></li>
+        <li><a class="scroll-link" href="#seventh" data-soffset="0"><%= t('nav.contact') %></a></li>
       </ul>
-    </div><a href="#" id="nav-toggle" aria-hidden="true">Menu</a>
+    </div><a href="#" id="nav-toggle" aria-hidden="true"><%= t('nav.menu') %></a>
 </header>
 
 
@@ -24,22 +24,22 @@
         </a>
     </li>
     <li>
-        <a id="trigger-intro" class="nav-link scroll-link" href="#intro" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(0, 0, 0); font-size: 18px; line-height: 28px; opacity: 1;">Home</a>
+        <a id="trigger-intro" class="nav-link scroll-link" href="#intro" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(0, 0, 0); font-size: 18px; line-height: 28px; opacity: 1;"><%= t('nav.home') %></a>
     </li>
     <li>
-        <a id="trigger-second" class="nav-link scroll-link" href="#second" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(74, 183, 228); font-size: 32px; line-height: 52px; opacity: 1;">About</a>
+        <a id="trigger-second" class="nav-link scroll-link" href="#second" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(74, 183, 228); font-size: 32px; line-height: 52px; opacity: 1;"><%= t('nav.about') %></a>
     </li>
     <li>
-        <a id="trigger-third" class="nav-link scroll-link" href="#third" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(0, 0, 0); font-size: 18px; line-height: 28px; opacity: 1;">Features</a>
+        <a id="trigger-third" class="nav-link scroll-link" href="#third" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(0, 0, 0); font-size: 18px; line-height: 28px; opacity: 1;"><%= t('nav.features') %></a>
     </li>
     <li>
-        <a id="trigger-fourth" class="nav-link scroll-link" href="#fourth" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(0, 0, 0); font-size: 18px; line-height: 28px; opacity: 1;">Services</a>
+        <a id="trigger-fourth" class="nav-link scroll-link" href="#fourth" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(0, 0, 0); font-size: 18px; line-height: 28px; opacity: 1;"><%= t('nav.services') %></a>
     </li>
     <li>
-        <a id="trigger-fifth" class="nav-link scroll-link" href="#fifth" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(0, 0, 0); font-size: 18px; line-height: 28px; opacity: 1;">Portfolio</a>
+        <a id="trigger-fifth" class="nav-link scroll-link" href="#fifth" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(0, 0, 0); font-size: 18px; line-height: 28px; opacity: 1;"><%= t('nav.portfolio') %></a>
     </li>
     <li>
-        <a id="trigger-seventh" class="nav-link scroll-link" href="#seventh" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(0, 0, 0); font-size: 18px; line-height: 28px; opacity: 1;">Contact</a>
+        <a id="trigger-seventh" class="nav-link scroll-link" href="#seventh" data-soffset="0" style="border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: rgb(0, 0, 0); font-size: 18px; line-height: 28px; opacity: 1;"><%= t('nav.contact') %></a>
     </li>
 </ul>
 <!--HEADER AND NAVIGATION AREA : ENDS-->
@@ -58,8 +58,8 @@
                         <div class="row-fluid">
                             <article class="span12">
                             <div id="welcome">
-                                <h1 class="main-heading white-txt remove-bottom">Persona</h1>
-                                <h3 class="main-heading-alt white-txt remove-top text-left"><span class="color-high">Creative Parallax Responsive Portfolio</span></h3>
+                                <h1 class="main-heading white-txt remove-bottom"><%= $name %></h1>
+                                <h3 class="main-heading-alt white-txt remove-top text-left"><span class="color-high"><%= t('description') %></span></h3>
                                 
                                 
                             </div>
@@ -87,7 +87,7 @@
 
                         <div class="row">
                         <article class="span4 offset8 add-top">
-                            <h2 class="main-heading-inner"><span>About</span></h2>
+                            <h2 class="main-heading-inner"><span><%= t('nav.about') %></span></h2>
                             <p class="medium-para">The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
                             <p class="medium-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla.</p>
                             <ul class="features add-top">

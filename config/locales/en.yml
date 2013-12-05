@@ -21,3 +21,13 @@
 
 en:
   hello: "Hello world"
+  nav:
+    home: "Home"
+    about: "About"
+    features: "Features"
+    services: "Services"
+    portfolio: "Portifolio"
+    contact: "Contact"
+    menu: "Menu"
+  description: "A Man of Creative Thoughts & Technicals"
+
