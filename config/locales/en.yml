@@ -30,4 +30,19 @@ en:
     contact: "Contact"
     menu: "Menu"
   description: "A Man of Creative Thoughts & Technicals"
+  about:
+    p1: "P1 testing."
+    p2: "P2 testing."
+    skill1: 
+      title: "Graphic Design"
+      amount: "12 Works"
+    skill2: 
+      title: "Photography"
+      amount: "Over 50,000 Shoots"
+    skill3: 
+      title: "Vedio Project"
+      amount: "Over 70 Hours"
+    skill4:
+      title: "FrontEnd Dev."
+      amount: "6 Project"
 
