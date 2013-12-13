@@ -45,4 +45,22 @@ en:
     skill4:
       title: "FrontEnd Dev."
       amount: "6 Project"
-
+  features:
+    f1:
+      title: "f1"
+      content: "f1-content"
+    f2:
+      title: "f2"
+      content: "f1-content"
+    f3:
+      title: "f3"
+      content: "f1-content"
+    f4:
+      title: "f4"
+      content: "f1-content"
+    f5:
+      title: "f5"
+      content: "f5-content"
+    f6:
+      title: "f6"
+      content: "f5-content"

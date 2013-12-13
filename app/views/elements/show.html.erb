@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @element.title %>
+</p>
+
+<p>
+  <strong>Pre img href:</strong>
+  <%= @element.pre_img_href %>
+</p>
+
+<p>
+  <strong>Class:</strong>
+  <%= @element.class %>
+</p>
+
+<p>
+  <strong>Img href:</strong>
+  <%= @element.img_href %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @element.link %>
+</p>
+
+<%= link_to 'Edit', edit_element_path(@element) %> |
+<%= link_to 'Back', elements_path %>

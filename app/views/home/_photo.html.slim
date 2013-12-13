@@ -1,0 +1,48 @@
+section.container-fluid.page-layout
+  .row-fluid
+    section.container
+      .row.add-top-main
+        article id="fifth" class="span12 outer-wrap" style="background-position: 50% 190px;"
+          .story
+            .row-fluid
+              article.span12.add-top
+                h2.main-heading-inner-inv
+                  span Portfolio         
+            section.row-fluid.add-bottom
+              p id="work-intro" class="span12 medium-para white-txt pad-top pad-bottom"
+                | aaaaa
+            .row-fluid
+              article.span12
+                section.clearfix id="options"
+                  ul id="filters" class="option-set clearfix" data-option-key="filter"
+                    li.inner-link 
+                      a href="#filter" data-option-value="*" class="" all
+                    li.inner-link 
+                      a href="#filter" data-option-value=".branding" class="" branding
+                    li.inner-link 
+                      a href="#filter" data-option-value=".web" class="" web
+                    li.inner-link 
+                      a href="#filter" data-option-value=".ecommerce" class="" ecommerce
+                    li.inner-link 
+                      a href="#filter" data-option-value=".print" class="" print
+                    li.inner-link 
+                      a href="#filter" data-option-value=".digital" digital
+                    li.inner-link 
+                      a href="#filter" data-option-value=".modern" class="" modern
+                    li.inner-link 
+                      a href="#filter" data-option-value=".creative" creative
+                    li.inner-link 
+                      a href="#filter" data-option-value=".modern, .creative" class="" modern and creative
+                    li.inner-link 
+                      a href="#filter" data-option-value=":not(.web)" class="selected" All, not including web
+            .row-fluid
+              article class="span12"
+                .clearfix.portfolio.isotope id="container" class="" style="position: relative; overflow: hidden; height: 983px;"
+                  - @elements.each do |element|
+                    .element.web.height-02.folio-item.isotope-item.isotope-hidden style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;"
+                      img alt="#{element.title}" title="#{element.title}" src="#{element.pre_img_href}" style="opacity: 1;"
+                      a.fancythumb target="_blank" href="#{element.link}" title="#{element.title}"
+                        .icon-link-sosa.folio-trigger-icon
+                      a href="#{element.img_href}" target="_blank"
+                        .icon-zoom-sosa.folio-trigger-icon
+                      h5.folio-subtitle.titles = element.title

@@ -9,107 +9,79 @@ section.container-fluid.page-layout
               article.span9.add-top
                 h2.main-heading-inner
                   span 
-                    = t(nav.features)
+                    = t('nav.features')
                 .row-fluid
                   article.span6.skill-info
                     h3.pe-bg-one
                       i.foundicon-star
-                      = t(features.description)
-                    p = t(features.ipsum dolor sit amet, consec tetur adipiscing elit enean nibh erat, sagittis sit amet congue at, aliquam eulibero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim.</p>
-                    </article>
+                      = t('features.f1.title')
+                    p = t('features.f1.content')
                     
-                    <article class="span6 skill-info">
-                    <h3 class="pe-bg-two"><i class="foundicon-settings"></i> Liquid + Responsive</h3>
-                    <p>ipsum dolor sit amet, consec tetur adipiscing elit enean nibh erat, sagittis sit amet congue at, aliquam eulibero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim.</p>
-                    </article>
-                </div>
+                  article.span6.skill-info
+                    h3.pe-bg-two
+                      i.foundicon-settings
+                      = t('features.f2.title')
+                    p = t('features.f2.content')
                 
-                <div class="row-fluid">
-                    <article class="span6 skill-info">
-                    <h3 class="pe-bg-three"><i class="foundicon-tools"></i> Customize in minutes</h3>
-                    <p>ipsum dolor sit amet, consec tetur adipiscing elit enean nibh erat, sagittis sit amet congue at, aliquam eulibero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim.</p>
-                    </article>
+                .row-fluid
+                  article.span6.skill-info
+                    h3.pe-bg-three
+                      i.foundicon-tools
+                      = t('features.f3.title')
+                    = t('features.f3.content')
                     
-                    <article class="span6 skill-info">
-                    <h3 class="pe-bg-four"><i class="foundicon-flag"></i> Perfect Minimalism</h3>
-                    <p>ipsum dolor sit amet, consec tetur adipiscing elit enean nibh erat, sagittis sit amet congue at, aliquam eulibero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim.</p>
-                    </article>
-                </div>
+                  article.span6.skill-info
+                    h3.pe-bg-four
+                      i.foundicon-flag
+                      = t('features.f4.title')
+                    = t('features.f4.content')
                 
-                <div class="row-fluid">
-                    <article class="span6 skill-info">
-                    <h3 class="pe-bg-five"><i class="foundicon-heart"></i> Trendy And Modern</h3>
-                    <p>ipsum dolor sit amet, consec tetur adipiscing elit enean nibh erat, sagittis sit amet congue at, aliquam eulibero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim.</p>
-                    </article>
+                .row-fluid
+                  article.span6.skill-info
+                    h3.pe-bg-five
+                      i.foundicon-heart
+                      = t('features.f5.title')
+                    = t('features.f5.content')
                     
-                    <article class="span6 skill-info">
-                    <h3 class="pe-bg-six"><i class="foundicon-idea"></i> Hand Coded HTML5</h3>
-                    <p>ipsum dolor sit amet, consec tetur adipiscing elit enean nibh erat, sagittis sit amet congue at, aliquam eulibero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim.</p>
-                    </article>
-                </div>
+                  article.span6.skill-info
+                    h3.pe-bg-six
+                      i.foundicon-idea
+                      = t('features.f6.title')
+                    = t('features.f6.content')
+
                 
                         
-                        <!-- Start Right Column -->
-                        <div id="skill-graph" class="add-top">
-                            <ul id="services-graph">
-                                <li>
-                                    <div class="bar-container">
-                                        <div class="bar-90 pe-bg-one">
-                                            <p>
-                                                Skill One<span class="percentage">90%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="bar-container">
-                                        <div class="bar-80 pe-bg-two">
-                                            <p>
-                                                Skill Two<span class="percentage">80%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="bar-container">
-                                        <div class="bar-70 pe-bg-three">
-                                            <p>
-                                                Skill Three<span class="percentage">70%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="bar-container">
-                                        <div class="bar-60 pe-bg-four">
-                                            <p>
-                                                Skill Four<span class="percentage">60%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="bar-container">
-                                        <div class="bar-50 pe-bg-five">
-                                            <p>
-                                                Skill Five<span class="percentage">50%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- End Right Column -->
-                        <div class="clearfix">
-                        </div>
-                    
-                </article>
-            </div>
-        </div> 
-        <!--.story-->  
-                </section>
-                
-            </div>    
-        </section>
-    </div>
-</section>
+
+                #skill-graph.add-top
+                  ul id="services-graph"
+                    li
+                      .bar-container
+                        .bar-90.pe-bg-one
+                          p
+                            | Skill One
+                            span.percentage 90%
+                    li
+                      .bar-container
+                        .bar-90.pe-bg-one
+                          p
+                            | Skill One
+                            span.percentage 90%
+                    li
+                      .bar-container
+                        .bar-90.pe-bg-one
+                          p
+                            | Skill One
+                            span.percentage 90%
+                    li
+                      .bar-container
+                        .bar-90.pe-bg-one
+                          p
+                            | Skill One
+                            span.percentage 90%
+                    li
+                      .bar-container
+                        .bar-90.pe-bg-one
+                          p
+                            | Skill One
+                            span.percentage 90%
+              .clearfix
